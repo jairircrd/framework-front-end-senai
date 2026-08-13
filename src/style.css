@@ -1,0 +1,4 @@
+@import "tailwindcss";
+
+/* Procura classes do Tailwind nos componentes Vue */
+@source "./**/*.vue";
