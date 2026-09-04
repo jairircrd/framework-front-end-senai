@@ -1,27 +1,18 @@
+<script setup>
+import Header from '../components/Header.vue'
+import Sidebar from '../components/Sidebar.vue'
+</script>
+
 <template>
   <div>
-    <h1>Painel</h1>
+    <Header />
 
-    <nav>
-      <router-link to="/app/upload">
-        Upload
-      </router-link>
+    <div>
+      <Sidebar />
 
-      <br>
-
-      <router-link to="/app/relatorios">
-        Relatórios
-      </router-link>
-
-      <br>
-
-      <router-link to="/app/graficos">
-        Gráficos
-      </router-link>
-    </nav>
-
-    <hr>
-
-    <router-view />
+      <main>
+        <router-view />
+      </main>
+    </div>
   </div>
 </template>
